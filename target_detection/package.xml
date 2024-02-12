@@ -10,7 +10,7 @@
   <license>TODO</license>
 
   <depend>catkin</depend>
-  <depend>realsense2_camera</depend>
+      <!-- <depend>realsense2_camera</depend> -->
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

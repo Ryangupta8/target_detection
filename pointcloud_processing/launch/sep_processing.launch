@@ -6,7 +6,7 @@
     <arg name="pcl_topic" default="points2"/>
     <arg name="fov_topic" default="fov_regions"/>
     <arg name="target_frame" default="odom"/>
-    <arg name="target_class" default="chair"/>
+    <arg name="target_class" default="suitcase"/>
     <arg name="visual" default="true"/>
     <arg name="pcl_visual" default="true"/>
 

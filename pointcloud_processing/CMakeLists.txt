@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(pointcloud_processing)
-
-add_compile_options(-std=c++11)
+# Set target C++ standard and required compiler features
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# add_compile_options(-std=c++11)
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
 
@@ -72,14 +74,14 @@ include_directories(
 #target_link_libraries(pcl_processing ${catkin_LIBRARIES})
 #target_link_libraries(sep_processing ${catkin_LIBRARIES})
 #target_link_libraries(bboxfilter_processing ${catkin_LIBRARIES})
-add_executable(rgbd_processing src/pcl_processing.cpp)
+# add_executable(rgbd_processing src/pcl_processing.cpp)
 add_executable(rgb_plus_lidar_processing src/sep_processing.cpp)
-add_executable(pose_estimation_service src/multiview_estimation.cpp)
+# add_executable(pose_estimation_service src/multiview_estimation.cpp)
 #add_executable(people_processing src/people_processing.cpp)
 
-target_link_libraries(rgbd_processing ${catkin_LIBRARIES})
+# target_link_libraries(rgbd_processing ${catkin_LIBRARIES})
 target_link_libraries(rgb_plus_lidar_processing ${catkin_LIBRARIES})
-target_link_libraries(pose_estimation_service ${catkin_LIBRARIES})
+# target_link_libraries(pose_estimation_service ${catkin_LIBRARIES})
 #target_link_libraries(pose_estimation_service ${catkin_LIBRARIES})
 #target_link_libraries(people_processing ${catkin_LIBRARIES})
 

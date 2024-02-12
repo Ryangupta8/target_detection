@@ -67,4 +67,7 @@ roslaunch transform_pointcloud transform.launch
 
 6) roslaunch pointcloud_processing sep_processing.launch
 
+Also need to test the launch file target_detection/launch/pose_Estimation.launch
+which appeared to have the correct remap args
+
 - current target class is chair. you might change this clas in sep_processing.cpp directly at this moment. will work on configuration later.

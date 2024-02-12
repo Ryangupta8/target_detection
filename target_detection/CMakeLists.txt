@@ -10,7 +10,7 @@ add_compile_options(-std=c++11)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   catkin
-  realsense2_camera
+  # realsense2_camera
 )
 
 ## System dependencies are found with CMake's conventions

@@ -454,8 +454,8 @@ int main (int argc, char** argv)
     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(tf_buffer_);
 
     // Initialize subscribers to darknet detection and pointcloud
-    ros::Subscriber bbox_sub = nh->subscribe<darknet_ros_msgs::BoundingBoxes>("bounding_boxes", 10, bBoxCb); 
-    ros::Subscriber cloud_sub = nh->subscribe<sensor_msgs::PointCloud2>("pointcloud", 10, pointCloudCb);
+    ros::Subscriber bbox_sub = nh->subscribe<detection_msgs::BoundingBoxes>("/yolov5/detections", 10, bBoxCb); 
+    ros::Subscriber cloud_sub = nh->subscribe<sensor_msgs::PointCloud2>("/velodyne_points", 10, pointCloudCb);
     ros::Subscriber camera_info_sub = nh->subscribe<sensor_msgs::CameraInfo>("camera_info", 100, cameraInfoCb);
 
     // Create a ROS publisher for the output point cloud
